@@ -14,4 +14,24 @@
         <label for="method">Prediction Method:</label>
         <select id="method" name="method">
             <option value="arima">ARIMA</option>
-            <option value="lstm">LSTM</
+            <option value="lstm">LSTM</option>
+            <option value="prophet">Prophet</option>
+        </select>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById("stock-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const symbol = document.getElementById("symbol").value;
+            const method = document.getElementById("method").value;
+            const response = await fetch(`/stock/${symbol}?method=${method}`);
+            const data = await response.json();
+            document.getElementById("results").innerText = JSON.stringify(data);
+        });
+    </script>
+</body>
+</html>
+
+                
