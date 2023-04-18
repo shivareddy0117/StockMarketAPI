@@ -1,0 +1,8 @@
+pip install fastapi
+pip install uvicorn
+pip install pandas
+pip install alpha_vantage
+pip install pmdarima
+pip install tensorflow
+pip install keras
+pip install fbprophet
