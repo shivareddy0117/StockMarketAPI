@@ -1,0 +1,10 @@
+The error you are encountering is because Microsoft Visual C++ 14.0 or greater is not installed on your system. Pystan, a dependency of fbprophet, requires a C++ compiler to build its extensions.
+
+To resolve this issue, you need to install Microsoft Visual C++ Build Tools:
+
+Go to the Microsoft Visual C++ Build Tools download page: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+Click on the "Download" button.
+Run the downloaded installer (vs_BuildTools.exe).
+In the installer, select the "C++ build tools" workload checkbox and make sure the "MSVC v142 - VS 2019 C++ x64/x86 build tools" and "Windows 10 SDK" components are checked. You can uncheck other components if you don't need them.
+Click on the "Install" button and wait for the installation to complete.
+After you have successfully installed Microsoft Visual C++ Build Tools, you should be able to install Pystan and other required packages without any issues.
