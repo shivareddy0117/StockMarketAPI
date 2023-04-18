@@ -6,3 +6,15 @@ pip install pmdarima
 pip install tensorflow
 pip install keras
 pip install fbprophet
+
+
+###############
+pip install cmdstanpy==0.9.68
+pip install pystan
+pip install numpy Cython
+pip install convertdate
+pip install holidays
+pip install setuptools-git
+pip install tqdm
+pip install lunarcalendar
+pip install fbprophet
